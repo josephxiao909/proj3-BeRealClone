@@ -17,6 +17,44 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        #if DEBUG
+        if ProcessInfo.processInfo.environment["SIMULATOR_DEVICE_NAME"] != nil {
+            configureSamplePhotosButton()
+        }
+        #endif
+    }
+
+    private func configureSamplePhotosButton() {
+        var configuration = UIButton.Configuration.tinted()
+        configuration.title = "Load Sample Photos"
+        configuration.image = UIImage(systemName: "photo.badge.plus")
+        configuration.imagePadding = 8
+
+        let button = UIButton(configuration: configuration)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(loadSamplePhotos), for: .touchUpInside)
+        view.addSubview(button)
+
+        NSLayoutConstraint.activate([
+            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20)
+        ])
+    }
+
+    @objc private func loadSamplePhotos(_ sender: UIButton) {
+        sender.isEnabled = false
+
+        PhotoImporter.savePhotos { [weak self, weak sender] result in
+            sender?.isEnabled = true
+
+            switch result {
+            case .success(let count):
+                self?.showAlert(description: "Added \(count) sample photos to the Photos library.")
+            case .failure(let error):
+                self?.showAlert(description: error.localizedDescription)
+            }
+        }
     }
     
     @IBAction func onLoginTapped(_ sender: Any) {
