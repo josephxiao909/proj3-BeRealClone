@@ -1,5 +1,6 @@
 #lab3-jxiao2023
-### ***COP4655 Lab 2*** - Joseph Xiao Z#23707133
+
+### ***COP4655 Lab 3*** - Joseph Xiao Z#23707133
 
 #### App Description - 
 &emsp; This app clones some of the main functionalities of Instagram and applies some aspects of the BeReal app to help prep for the unit project. 
@@ -26,3 +27,11 @@ with the camera and add more complex filtering logic to the posts returned in yo
 <img width="295" height="640" alt="Lab2_InstaParse_AppDemo1gif" src="https://github.com/user-attachments/assets/f8c64247-dec5-4fde-8126-ebc8fd6ec4a2" />
 
 <img width="295" height="640" alt="Lab2_InstaParse_AppDemo2" src="https://github.com/user-attachments/assets/f74cc420-7182-4837-bbdf-db2354702df1" />
+
+<img width="360" height="783" alt="Lab3_recording1" src="https://github.com/user-attachments/assets/991e7e24-4579-4ad3-9e3e-517dd524665e" />
+
+<img width="480" height="1044" alt="Lab3_recording2" src="https://github.com/user-attachments/assets/22d44d4e-09e8-4a2b-99fc-990e5ceb7321" />
+
+<img width="360" height="783" alt="Lab3_recording3" src="https://github.com/user-attachments/assets/0bc62ec4-4841-4160-9cb5-38ee33456cd5" />
+
+
