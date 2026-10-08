@@ -23,4 +23,6 @@ with the camera and add more complex filtering logic to the posts returned in yo
      
 #### Video App Demos - 
 
-![instaparse_walkthrough_1_xtra_small](https://user-images.githubusercontent.com/11927517/199710313-700aef85-ba89-427c-aa07-f89f0fdfdbbe.gif)
+<img width="295" height="640" alt="Lab2_InstaParse_AppDemo1gif" src="https://github.com/user-attachments/assets/f8c64247-dec5-4fde-8126-ebc8fd6ec4a2" />
+
+<img width="295" height="640" alt="Lab2_InstaParse_AppDemo2" src="https://github.com/user-attachments/assets/f74cc420-7182-4837-bbdf-db2354702df1" />
